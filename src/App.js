@@ -1,8 +1,12 @@
+import Layout from "./components/Layout/Layout";
+
 
 function App() {
   return (
     <div className="App">
-      ball by master Begaiym Shaibekova
+      <Layout>
+        ball by master Begaiym Shaibekova
+      </Layout>
     </div>
   );
 }
