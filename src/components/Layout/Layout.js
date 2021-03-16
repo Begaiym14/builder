@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
             <Toolbar />
             <Drawer />
             {children}
-
         </div>
     );
 }
