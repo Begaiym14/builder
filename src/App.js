@@ -6,13 +6,13 @@ function App() {
   return (
     <div className="App">
       <Layout>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
-        ball by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
+        bell by master Begaiym Shaibekova<br/>
       </Layout>
     </div>
   );
