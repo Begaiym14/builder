@@ -1,14 +1,16 @@
 import classes from "./Logo.module.css";
-import logotip from "../../images/logotip.png"
+import logo from "../../images/logo.png";
 
 const Logo = () => {
     return (
         <div className={classes.Logo}>
-            <img src={logotip} alt="#"/>
-            <span>Bell</span>
-            
+            <img src={logo} alt="Bell logo" />
+            <span>Bell Builber </span>
         </div>
     );
 }
 
 export default Logo;
+
+
+

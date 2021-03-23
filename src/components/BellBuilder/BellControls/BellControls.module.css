@@ -1,0 +1,7 @@
+.BellControls{
+    flex: 0 0 250px;
+    border-radius: 1pem;
+    padding: 1pem;
+    background-color: seagreen;
+    color: white;
+}

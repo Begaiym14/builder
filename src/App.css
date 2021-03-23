@@ -2,3 +2,7 @@ body{
     margin: 0;
     font-family: 'Lobster', cursive;
 }
+#component{
+    width: 100px;
+    height: 50px;
+}

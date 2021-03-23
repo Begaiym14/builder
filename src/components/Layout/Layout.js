@@ -8,11 +8,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className={classes.Layout}>
-      <Toolbar setDrawerOpen={setDrawerOpen} />
-      <Drawer open={drawerOpen} />
+      <Toolbar openDrawer={() => setDrawerOpen(true)} />
+      <Drawer open={drawerOpen} closeDrawer={() => setDrawerOpen(false)} />
       {children}
     </div>
   );
 }
- 
+
 export default Layout;
