@@ -3,12 +3,14 @@ import Nav from "../Nav/Nav";
 import DrawerOpen from "../Drawer/DrawerOpen/DrawerOpen";
 import classes from "./Toolbar.module.css";
 
-const Toolbar = ({ setDrawer}) => {
+const Toolbar = ({ openDrawer }) => {
   return (
     <div className={classes.Toolbar}>
       <Logo />
-      <Nav />
-      <DrawerOpen setDrawerOpen={setDrawer} />
+      <nav>
+        <Nav />
+      </nav>
+      <DrawerOpen click={openDrawer} />
     </div>
   );
 }
