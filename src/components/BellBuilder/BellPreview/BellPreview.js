@@ -1,7 +1,7 @@
-  
 import BellIngredient from "../BellIngredient/BellIngredient";
-import classes from "./BellPreview.module.css";
 import ingredientsBackground from "../../../images/cheese.svg";
+
+import classes from "./BellPreview.module.css";
 
 const BellPreview = ({ ingredients }) => {
   const result = [];
