@@ -1,6 +1,8 @@
-import classes from "./BellBuilder.module.css";
 import BellPreview from "./BellPreview/BellPreview";
 import BellControls from "./BellControls/BellControls";
+
+import classes from "./BellBuilder.module.css";
+
 
 const BellBuilder = () => {
   const ingredients = {
