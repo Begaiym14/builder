@@ -7,7 +7,7 @@ const BellPreview = ({ ingredients }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<BellIngredient type={ingredient} />)
+      result.push(<BellIngredient key={ingredient + i} type={ingredient} />)
     }
   }
 
