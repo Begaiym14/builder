@@ -1,10 +1,17 @@
+  
+import BellControl from "./BellControl/BellControl";
 import classes from "./BellControls.module.css";
 
-const BellControls = ({ingredients}) => {
-  const result =[];
-  for (const ingredient in ingredients)
+const BellControls = ({ ingredients }) => {
+  const results = [];
+  for (const ingredient in ingredients) {
+    results.push(<BellControl type={ingredient} />)
+  }
+
   return (
-    <div className={classes.BellControls}>Controls</div>
+    <div className={classes.BellControls}>
+      {results}
+    </div>
   );
 }
 
