@@ -1,8 +1,10 @@
 import Layout from "./components/Layout/Layout";
 import BellBuilder from "./components/BellBuilder/BellBuilder";
+
+
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>
