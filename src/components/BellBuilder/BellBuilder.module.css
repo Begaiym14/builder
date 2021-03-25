@@ -1,6 +1,5 @@
 .BellBuilder{
     display: flex;
     justify-content: center;
-    margin: 1rem;
     flex-wrap: wrap;
 }
