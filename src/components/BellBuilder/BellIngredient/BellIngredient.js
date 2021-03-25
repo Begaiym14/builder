@@ -1,11 +1,11 @@
-import classes from "./BellIngredient.module.css";
-
 import salamiBackground from "../../../images/salami.svg";
 import tomatoBackground from "../../../images/tomato.svg";
 import blackOliveBackground from "../../../images/blackOlive.svg";
 import greenOliveBackground from "../../../images/greenOlive.svg";
 import redPepperBackground from "../../../images/redPepper.svg";
 import yellowPepperBackground from "../../../images/yellowPepper.svg";
+
+import classes from "./BellIngredient.module.css";
 
 const BellIngredient = ({ type }) => {
     const types = {
