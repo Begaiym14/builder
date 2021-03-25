@@ -1,5 +1,7 @@
+  
 import BellIngredient from "../BellIngredient/BellIngredient";
 import classes from "./BellPreview.module.css";
+import ingredientsBackground from "../../../images/cheese.svg";
 
 const BellPreview = ({ ingredients }) => {
   const result = [];
@@ -11,11 +13,12 @@ const BellPreview = ({ ingredients }) => {
 
   return (
     <div className={classes.BellPreview}>
-      <div className={classes.sause}>
+      <div
+        className={classes.ingredients}
+        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
         {result}
       </div>
     </div>
-
   );
 }
 

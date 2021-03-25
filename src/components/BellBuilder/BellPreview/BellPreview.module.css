@@ -1,7 +1,18 @@
-.BellPreview{
+.BellPreview {
     flex: 0 0 400px;
-    height: 400px;
+    height: 420px;
     margin-right: 1rem;
-    border-radius: 100%;
-    background-color: seagreen;
-}
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: #fcc067;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .ingredients {
+    width: 380px;
+    height: 380px;
+    border-radius: 1rem;
+    position: relative;
+  } */

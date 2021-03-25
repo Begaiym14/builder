@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+* {
+    box-sizing: border-box;
+  }
 body{
     margin: 0;
     font-family: 'Lobster', cursive;
-}
-#component{
-    width: 100px;
-    height: 50px;
 }

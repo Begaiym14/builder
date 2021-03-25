@@ -4,11 +4,13 @@ import BellControls from "./BellControls/BellControls";
 
 const BellBuilder = () => {
   const ingredients = {
-    tomatoes: 10,
+    tomato: 20,
     salami: 20,
-    olives: 10,
+    greenOlive: 20,
+    blackOlive: 20,
+    redPepper: 20,
+    yellowPepper: 15,
   };
-
 
   return (
     <div className={classes.BellBuilder}>
