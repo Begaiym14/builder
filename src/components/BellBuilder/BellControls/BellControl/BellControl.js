@@ -1,14 +1,15 @@
+import Button from "../../../Ul/Button/Button";
 import BellIngredient from "../../BellIngredient/BellIngredient";
 import classes from "./BellControl.module.css";
 
 const BellControl = ({ type, add, remove }) => {
   return (
     <div className={classes.BellControl}>
-      <button className={classes.more} onClick={() => add(type)}>+</button>
+      <Button className={classes.more} onClick={() => add(type)}>+</Button>
       <div className={classes.ingredient}>
         <BellIngredient type={type} fixed />
       </div>
-      <button className={classes.less} onClick={() => remove(type)}>-</button>
+      <Button className={classes.less} onClick={() => remove(type)}>-</Button>
     </div>
   );
 }
