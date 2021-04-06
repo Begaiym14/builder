@@ -3,7 +3,7 @@ import ingredientsBackground from "../../../images/cheese.svg";
 
 import classes from "./BellPreview.module.css";
 
-const BellPreview = ({ ingredients }) => {
+const BellPreview = ({ ingredients, price }) => {
   const result = [];
   for (const ingredient in ingredients) {
     for (let i = 0; i < ingredients[ingredient]; i++) {
@@ -13,11 +13,14 @@ const BellPreview = ({ ingredients }) => {
 
   return (
     <div className={classes.BellPreview}>
-      <div
-        className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
-        {result}
+      <div className={classes.bell}>
+        <div
+          className={classes.ingredients}
+          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+          {result}
+        </div>
       </div>
+      <div className={classes.price}>{price} som</div>
     </div>
   );
 }

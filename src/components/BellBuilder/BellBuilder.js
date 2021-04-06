@@ -13,6 +13,7 @@ const BellBuilder = () => {
     redPepper: 1,
     yellowPepper: 1,
   });
+  const [price, setPrice] = useState(150);
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -21,19 +22,23 @@ const BellBuilder = () => {
   }
 
   function removeIngredient(type) {
-    const newIngredients = { ...ingredients };
-    newIngredients[type]--;
-    setIngredients(newIngredients);
+    if (ingredients[type]) {
+      const newIngredients = { ...ingredients };
+      newIngredients[type]--;
+      setIngredients(newIngredients);
+    }
   }
 
   return (
     <div className={classes.BellBuilder}>
-      <BellPreview ingredients={ingredients} />
+      <BellPreview
+        ingredients={ingredients}
+        price={price} />
       <BellControls
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}
-        />
+      />
     </div>
   );
 }
