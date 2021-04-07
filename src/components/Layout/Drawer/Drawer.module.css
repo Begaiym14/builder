@@ -1,28 +1,27 @@
 .Drawer .content {
-    background-color: aqua;
     width: 250px;
     height: 100%;
-    position:  fixed;
+    position: fixed;
     top: 0;
     left: 0;
-   
+  
     font-size: 2rem;
     color: white;
+    background-color: tomato;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     transition: transform .3s ease-out;
-}
-.open{
+  }
+  
+  .open {
     transform: translateX(0);
-}
-
-.close{
+  }
+  .close {
     transform: translateX(-260px);
-}
-
-@media (min-width: 550px) {
+  }
+  
+  @media (min-width: 550px) {
     .Drawer  {
       display: none;
     }
   }
-
 
