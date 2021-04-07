@@ -4,7 +4,7 @@ import BellControls from "./BellControls/BellControls";
 import classes from "./BellBuilder.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Modal from "../UI/Modal/Modal";
+import Modal from "../Ul/Modal/Modal";
 
 const BellBuilder = () => {
   const prices = {
