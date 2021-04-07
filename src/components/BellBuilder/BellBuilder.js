@@ -2,7 +2,9 @@ import BellPreview from "./BellPreview/BellPreview";
 import BellControls from "./BellControls/BellControls";
 
 import classes from "./BellBuilder.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Modal from "../UI/Modal/Modal";
 
 const BellBuilder = () => {
   const prices = {
@@ -13,15 +15,22 @@ const BellBuilder = () => {
     redPepper: 2,
     yellowPepper: 1,
   };
-  const [ingredients, setIngredients] = useState({
-    tomato: 1,
-    salami: 1,
-    greenOlive: 1,
-    blackOlive: 1,
-    redPepper: 1,
-    yellowPepper: 1,
-  });
-  const [price, setPrice] = useState(150);
+  const [ingredients, setIngredients] = useState({});
+  const [price, setPrice] = useState(0);
+  const [ordering, setOrdering] = useState(false);
+
+  useEffect(
+    () => axios
+      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
+      .then(response => {
+        setPrice(response.data.price);
+
+        // For arrays
+        // setIngredients(Object.values(response.data.ingredients));
+        // For objects
+        setIngredients(response.data.ingredients);
+      }), []
+  );
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -39,6 +48,14 @@ const BellBuilder = () => {
     }
   }
 
+  function startOrdering() {
+    setOrdering(true);
+  }
+
+  function stopOrdering() {
+    setOrdering(false);
+  }
+
   return (
     <div className={classes.BellBuilder}>
       <BellPreview
@@ -48,7 +65,11 @@ const BellBuilder = () => {
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}
+        startOrdering={startOrdering}
       />
+      <Modal
+        show={ordering}
+        cancel={stopOrdering}>Hello</Modal>
     </div>
   );
 }
