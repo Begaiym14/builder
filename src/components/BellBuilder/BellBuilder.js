@@ -19,6 +19,15 @@ const BellBuilder = () => {
   const [price, setPrice] = useState(0);
   const [ordering, setOrdering] = useState(false);
 
+
+  useEffect(() => {
+    axios.get('https://builder-be2e1-default-rtdb.firebaseio.com/defauld.json')
+      .then(response => {
+        setIngredients(response.data.ingredients);
+        setPrice(response.data.price);
+      });
+  }, []);
+
   useEffect(
     () => axios
       .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
