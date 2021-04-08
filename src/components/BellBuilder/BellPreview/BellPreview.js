@@ -1,5 +1,6 @@
 import BellIngredient from "../BellIngredient/BellIngredient";
 // import ingredientsBackground from "../../../images/cheese.svg";
+import lentaBackground from "../../../images/lenta.svg";
 
 import classes from "./BellPreview.module.css";
 
@@ -14,11 +15,11 @@ const BellPreview = ({ ingredients, price }) => {
   return (
     <div className={classes.BellPreview}>
       <div className={classes.bell}>
-        {/* <div
+        <div
           className={classes.ingredients}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+          style={{ backgroundImage: `url(${lentaBackground})` }}>
           {result}
-        </div> */}
+        </div>
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
