@@ -1,19 +1,19 @@
 import classes from "./BellIngredient.module.css";
-import blueBackground from "../../../images/blue.svg";
-import redBackground from "../../../images/red.svg";
-import pinkBackground from "../../../images/pink.svg";
-import purpleBackground from "../../../images/purple.svg";
-import whiteBackground from "../../../images/white.svg";
-import yellowBackground from "../../../images/yellow.svg";
+import blueBackground from "../../../images/blue.png";
+import redBackground from "../../../images/red.png";
+import pinkBackground from "../../../images/pink.png";
+import purpleBackground from "../../../images/purple.png";
+import whiteBackground from "../../../images/white.png";
+import yellowBackground from "../../../images/yellow.png";
 
 const BellIngredient = ({ type, fixed }) => {
   const types = {
-    blue: { backgroundImage: `url(${blueBackground})`, width: "35px", height: "35px" },
-    red: { backgroundImage: `url(${redBackground})`, width: "35px", height: "35px" },
-    pink: { backgroundImage: `url(${pinkBackground})`, width: "10px", height: "10px" },
-    purple: { backgroundImage: `url(${purpleBackground})`, width: "10px", height: "10px" },
-    white: { backgroundImage: `url(${whiteBackground})`, width: "20px", height: "20px" },
-    yellow: { backgroundImage: `url(${yellowBackground})`, width: "40px", height: "40px" },
+    blue: { backgroundImage: `url(${blueBackground})`, width: "15px", height: "15px" },
+    red: { backgroundImage: `url(${redBackground})`, width: "15px", height: "15px" },
+    pink: { backgroundImage: `url(${pinkBackground})`, width: "15px", height: "15px" },
+    purple: { backgroundImage: `url(${purpleBackground})`, width: "15px", height: "15px" },
+    white: { backgroundImage: `url(${whiteBackground})`, width: "15px", height: "15px" },
+    yellow: { backgroundImage: `url(${yellowBackground})`, width: "15px", height: "15px" },
   };
 
   function getPosition(ingredientWidth) {
