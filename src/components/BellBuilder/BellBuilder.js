@@ -8,12 +8,12 @@ import Modal from "../Ul/Modal/Modal";
 
 const BellBuilder = () => {
   const prices = {
-    tomato: 3.5,
-    salami: 4,
-    greenOlive: .3,
-    blackOlive: .3,
-    redPepper: 2,
-    yellowPepper: 1,
+    blue: 3.5,
+    red: 4,
+    pink: .3,
+    purple: .3,
+    white: 2,
+    yellow: 1,
   };
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);

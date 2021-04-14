@@ -1,19 +1,19 @@
 import classes from "./BellIngredient.module.css";
-import salamiBackground from "../../../images/salami.svg";
-import tomatoBackground from "../../../images/tomato.svg";
-import blackOliveBackground from "../../../images/blackOlive.svg";
-import greenOliveBackground from "../../../images/greenOlive.svg";
-import redPepperBackground from "../../../images/redPepper.svg";
-import yellowPepperBackground from "../../../images/yellowPepper.svg";
+import blueBackground from "../../../images/blue.svg";
+import redBackground from "../../../images/red.svg";
+import pinkBackground from "../../../images/pink.svg";
+import purpleBackground from "../../../images/purple.svg";
+import whiteBackground from "../../../images/white.svg";
+import yellowBackground from "../../../images/yellow.svg";
 
 const BellIngredient = ({ type, fixed }) => {
   const types = {
-    salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
-    tomato: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
-    blackOlive: { backgroundImage: `url(${blackOliveBackground})`, width: "10px", height: "10px" },
-    greenOlive: { backgroundImage: `url(${greenOliveBackground})`, width: "10px", height: "10px" },
-    redPepper: { backgroundImage: `url(${redPepperBackground})`, width: "20px", height: "20px" },
-    yellowPepper: { backgroundImage: `url(${yellowPepperBackground})`, width: "40px", height: "40px" },
+    blue: { backgroundImage: `url(${blueBackground})`, width: "35px", height: "35px" },
+    red: { backgroundImage: `url(${redBackground})`, width: "35px", height: "35px" },
+    pink: { backgroundImage: `url(${pinkBackground})`, width: "10px", height: "10px" },
+    purple: { backgroundImage: `url(${purpleBackground})`, width: "10px", height: "10px" },
+    white: { backgroundImage: `url(${whiteBackground})`, width: "20px", height: "20px" },
+    yellow: { backgroundImage: `url(${yellowBackground})`, width: "40px", height: "40px" },
   };
 
   function getPosition(ingredientWidth) {

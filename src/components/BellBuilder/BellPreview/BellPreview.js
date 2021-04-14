@@ -1,5 +1,4 @@
 import BellIngredient from "../BellIngredient/BellIngredient";
-// import ingredientsBackground from "../../../images/cheese.svg";
 import lentaBackground from "../../../images/lenta.svg";
 
 import classes from "./BellPreview.module.css";
