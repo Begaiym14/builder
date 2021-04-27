@@ -1,10 +1,9 @@
 .NavItem a {
-    display: block;
     color: black;
-    text-decoration: none;
-    padding: .6rem 1rem .4rem;
     border-bottom: 5px solid transparent;
-    transition: all .2s ease-in;
+    text-decoration: none;
+    display: block;
+    padding: .5rem 1rem .35rem;
   }
   .NavItem a:hover {
     border-color: black;
