@@ -7,9 +7,12 @@ const CheckoutSummary = ({ cancelCallback }) => {
     <div className={classes.CheckoutSummary}>
       <div>
         <BellPreview ingredients={{
-          tomato: 5, 
-          salami: 10,
-          greenOlive: 50,
+          blue: 100,
+          red: 100,
+          pink: 100,
+          purple: 100,
+          white: 100,
+          yellow: 100,
         }} price={150} />
       </div>
       <div>
@@ -19,5 +22,5 @@ const CheckoutSummary = ({ cancelCallback }) => {
     </div>
   );
 }
- 
+
 export default CheckoutSummary;

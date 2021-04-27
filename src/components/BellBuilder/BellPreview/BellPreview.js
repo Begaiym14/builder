@@ -1,5 +1,5 @@
 import BellIngredient from "../BellIngredient/BellIngredient";
-import lentaBackground from "../../../images/lenta.svg";
+import lenta from "../../../images/lenta.svg";
 
 import classes from "./BellPreview.module.css";
 
@@ -13,10 +13,10 @@ const BellPreview = ({ ingredients, price }) => {
 
   return (
     <div className={classes.BellPreview}>
-      <div className={classes.bell}>
-        <div
-          className={classes.ingredients}
-          style={{ backgroundImage: `url(${lentaBackground})` }}>
+      <div
+        className={classes.bell}>
+        <div className={classes.lenta}>
+          <img src={lenta} alt="#" />
           {result}
         </div>
       </div>

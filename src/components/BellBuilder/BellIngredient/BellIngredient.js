@@ -9,13 +9,10 @@ import yellowBackground from "../../../images/yellow.png";
 
 const BellIngredient = ({ type, fixed }) => {
   const types = {
-
-    blue: { backgroundImage: `url(${blueBackground})`, width: "60px", height: "60px" },
+    blue: { backgroundImage: `url(${blueBackground})`, width: "70px", height: "70px" },
     red: { backgroundImage: `url(${redBackground})`, width: "50px", height: "50px" },
     pink: { backgroundImage: `url(${pinkBackground})`, width: "50px", height: "50px", },
-
     purple: { backgroundImage: `url(${purpleBackground})`, width: "50px", height: "50px" },
-
     white: { backgroundImage: `url(${whiteBackground})`, width: "50px", height: "50px" },
     yellow: { backgroundImage: `url(${yellowBackground})`, width: "50px", height: "50px" },
   };
