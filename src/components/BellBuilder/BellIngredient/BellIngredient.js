@@ -1,3 +1,5 @@
+import React from "react";
+
 import classes from "./BellIngredient.module.css";
 import blueBackground from "../../../images/blue.png";
 import redBackground from "../../../images/red.png";
