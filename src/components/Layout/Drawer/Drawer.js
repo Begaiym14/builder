@@ -1,6 +1,6 @@
-import Logo from "../../Ul/Logo/Logo";
+import Logo from "../../UI/Logo/Logo";
 import Nav from "../../Nav/Nav";
-import Backdrop from "../../Ul/Backdrop/Backdrop";
+import Backdrop from "../../UI/Backdrop/Backdrop";
 
 import classes from "./Drawer.module.css";
 

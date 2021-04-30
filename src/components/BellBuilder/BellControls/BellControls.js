@@ -1,4 +1,4 @@
-import Button from "../../Ul/Button/Button";
+import Button from "../../UI/Button/Button";
 import BellControl from "./BellControl/BellControl";
 import classes from "./BellControls.module.css";
 

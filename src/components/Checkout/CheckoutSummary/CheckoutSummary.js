@@ -1,12 +1,12 @@
 import classes from "./CheckoutSummary.module.css";
-import PizzaPreview from "../../PizzaBuilder/PizzaPreview/PizzaPreview";
+import BellPreview from "../../BellBuilder/BellPreview/BellPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 
 const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        <PizzaPreview ingredients={{
+        <BellPreview ingredients={{
          blue: 100,
          red: 100,
          pink: 100,
