@@ -20,10 +20,12 @@
   align-items: center;
 }
 .lenta {
+  
   width: 380px;
   height: 380px;
   border-radius: 100%;
   position: relative;
+  justify-content: center;
 }
 .price {
   border-radius: 1rem;

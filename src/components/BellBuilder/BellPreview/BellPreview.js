@@ -1,5 +1,5 @@
 import BellIngredient from "../BellIngredient/BellIngredient";
-import lenta from "../../../images/lenta.svg";
+import lenta from "../../../images/silver.png";
 
 import classes from "./BellPreview.module.css";
 
