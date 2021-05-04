@@ -47,19 +47,9 @@ const BellBuilder = ({ history }) => {
   }
 
   function finishOrdering() {
-    axios
-      .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
-        ingredients: ingredients,
-        price: price,
-        address: "1234 Jusaeva str",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
-      })
-      .then(() => {
-        setOrdering(false);
-        // loadDefaults();
-        history.push('/checkout');
-      });
+    setOrdering(false);
+    // loadDefaults();
+    history.push('/checkout');
   }
 
   return (
@@ -69,6 +59,7 @@ const BellBuilder = ({ history }) => {
         price={price} />
       <BellControls
         ingredients={ingredients}
+
         startOrdering={startOrdering}
       />
       <Modal
