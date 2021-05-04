@@ -6,7 +6,8 @@ const initialState = {
         purple: 1,
         white: 1,
         yellow: 1,
-    }
+    },
+    price:200,
 };
 
 const builderReducer = (state = initialState, action) => {
