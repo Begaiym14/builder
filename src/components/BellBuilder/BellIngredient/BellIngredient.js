@@ -1,7 +1,7 @@
 import React from "react";
 
 import classes from "./BellIngredient.module.css";
-import blueBackground from "../../../images/blue.png";
+import colaBackground from "../../../images/cola.png";
 import redBackground from "../../../images/red.png";
 import pinkBackground from "../../../images/pink.png";
 import purpleBackground from "../../../images/purple.png";
@@ -11,7 +11,7 @@ import yellowBackground from "../../../images/yellow.png";
 
 const BellIngredient = ({ type, fixed }) => {
   const types = {
-    blue: { backgroundImage: `url(${blueBackground})`, width: "70px", height: "70px" },
+    cola: { backgroundImage: `url(${colaBackground})`, width: "70px", height: "70px" },
     red: { backgroundImage: `url(${redBackground})`, width: "50px", height: "50px" },
     pink: { backgroundImage: `url(${pinkBackground})`, width: "50px", height: "50px", },
     purple: { backgroundImage: `url(${purpleBackground})`, width: "50px", height: "50px" },
