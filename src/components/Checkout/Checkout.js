@@ -1,5 +1,5 @@
 import BellPreview from "../BellBuilder/BellPreview/BellPreview";
-import CheckoutForm from "../Checkout/CheckoutSummary/CheckoutForm/CheckoutForm";
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
