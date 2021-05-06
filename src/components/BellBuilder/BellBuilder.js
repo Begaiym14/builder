@@ -10,14 +10,6 @@ import Button from "../UI/Button/Button";
 import { useSelector } from "react-redux";
 
 const BellBuilder = ({ history }) => {
-  const prices = {
-    blue: 1,
-    pink: 1,
-    purple: 1,
-    red: 1,
-    white: 1,
-    yellow: 1,
-  };
   const ingredients = useSelector(state => state.ingredients);
   const price = useSelector(state => state.price);
   const [ordering, setOrdering] = useState(false);
@@ -37,7 +29,6 @@ const BellBuilder = ({ history }) => {
   //     });
   // }
 
- 
   function startOrdering() {
     setOrdering(true);
   }
@@ -59,19 +50,18 @@ const BellBuilder = ({ history }) => {
         price={price} />
       <BellControls
         ingredients={ingredients}
-
         startOrdering={startOrdering}
-      />
+        />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
-        <OrderSummary
-          ingredients={ingredients}
-          price={price}
-        />
-        <Button onClick={finishOrdering} green>Checkout</Button>
-        <Button onClick={stopOrdering}>Cancel</Button>
-      </Modal>
+          <OrderSummary
+            ingredients={ingredients}
+            price={price}
+            />
+          <Button onClick={finishOrdering} green>Checkout</Button>
+          <Button onClick={stopOrdering}>Cancel</Button>
+        </Modal>
     </div>
   );
 }

@@ -20,14 +20,13 @@
   align-items: center;
 }
 .lenta {
-  
   width: 380px;
   height: 380px;
   border-radius: 100%;
   position: relative;
-  justify-content: center;
 }
 .price {
+  background-color: rgba(92, 91, 91, 0.534);
   border-radius: 1rem;
   padding: 0 1rem;
   font-size: 1.5rem;

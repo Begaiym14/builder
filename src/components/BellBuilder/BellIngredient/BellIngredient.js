@@ -1,6 +1,5 @@
-import React from "react";
-
 import classes from "./BellIngredient.module.css";
+
 import colaBackground from "../../../images/cola.png";
 import redBackground from "../../../images/red.png";
 import pinkBackground from "../../../images/pink.png";
@@ -9,7 +8,7 @@ import whiteBackground from "../../../images/white.png";
 import yellowBackground from "../../../images/yellow.png";
 
 
-const BellIngredient = ({ type, fixed }) => {
+const BellIngredient = ({ type }) => {
   const types = {
     cola: { backgroundImage: `url(${colaBackground})`, width: "70px", height: "70px" },
     red: { backgroundImage: `url(${redBackground})`, width: "50px", height: "50px" },

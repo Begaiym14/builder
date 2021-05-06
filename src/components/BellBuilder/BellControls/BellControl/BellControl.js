@@ -5,6 +5,7 @@ import classes from "./BellControl.module.css";
 
 const BellControl = ({ type, count }) => {
   const dispatch = useDispatch();
+
   return (
     <div className={classes.BellControl}>
       <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
