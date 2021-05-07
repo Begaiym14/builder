@@ -1,22 +1,14 @@
 const initialState = {
     ingredients: {
-        red: 1,
-        blue: 1,
-        pink: 1,
-        purple: 1,
-        white: 1,
-        yellow: 1,
+        dumai: "dumai",
+        kay: "kay",
     },
 
     price: 200,
 };
 const prices = {
-    blue: 1,
-    pink: 1,
-    purple: 1,
-    red: 1,
-    white: 1,
-    yellow: 1,
+    dumai: "dumai",
+    kay: "kay",
 };
 const builderReducer = (state = initialState, action) => {
     const newState = { ...state }

@@ -1,4 +1,29 @@
-.BellIngredient {
-    position: absolute;
-    /* margin-top: 20px; */
+@keyframes potAnimation {
+  10%{
+      transform-origin: bottom;
   }
+  50%{
+      transform: scale(.9);
+      transform-origin: bottom;
+  }
+  100%{
+      transform-origin: bottom;
+  }
+}
+.BellIngredient{
+  background-size: cover;
+  display: flex;
+
+  margin: 10px;
+  margin-top: .2rem;
+  margin-bottom: 2.3rem;
+  /* margin-top: 45px; */
+  /* margin-left: 35px; */
+  animation-name: potAnimation;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+
+}

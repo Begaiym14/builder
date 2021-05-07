@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 * {
-    font-family: "Merienda", cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
   }
 body{
     margin: 0;
+    font-weight: 600;
     /* font-family: 'Dancing Script', cursive; */
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     /* font-family: 'Lobster', cursive; */
+    /* font-family: "Merienda", cursive; */
 }

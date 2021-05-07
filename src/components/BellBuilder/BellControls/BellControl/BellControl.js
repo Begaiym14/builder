@@ -2,19 +2,19 @@ import Button from "../../../UI/Button/Button";
 import classes from "./BellControl.module.css";
 import { useDispatch } from "react-redux";
 
-
-
 const BellControl = ({ type, count }) => {
   const dispatch = useDispatch();
   const names = {
     dumai: "dumai",
-
+    kay:"kay",
   }
 
   return (
-    <div className={classes.AnimalControl}>
+    <div className={classes.BellControl}>
       <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", animal: type })}>+</Button>
-      {names[type]}
+      <div className={classes.ingredient}>
+        {names[type]}
+      </div>
       <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", animal: type })} disabled={!count}>-</Button>
     </div>
   );
