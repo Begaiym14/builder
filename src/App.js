@@ -9,6 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <Layout>
+        <h1 className="medicine">medicine</h1>
         <Switch>
           <Route path="/" component={BellBuilder} exact />
           <Route path="/checkout" component={Checkout} />
