@@ -3,19 +3,19 @@ import BellControl from "./BellControl/BellControl";
 import classes from "./BellControls.module.css";
 
 const BellControls = ({
-  ingredients,
+  medicines,
   startOrdering
 }) => {
   const results = [];
   let total = 0;
-  for (const ingredient in ingredients) {
+  for (const medicine in medicines) {
     // Add ingredient number to totals number
-    total += ingredients[ingredient];
+    total += medicines[medicine];
     // Render pizza control for this ingredient
     results.push(<BellControl
-      key={ingredient}
-      count={ingredients[ingredient]}
-      type={ingredient} />)
+      key={medicine}
+      count={medicines[medicine]}
+      type={medicine} />)
   }
 
   return (

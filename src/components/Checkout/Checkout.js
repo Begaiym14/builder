@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 
 
 const Checkout = ({ history }) => {
-  const ingredients = useSelector(state => state.buider.ingredients);
-  const price = useSelector(state => state.buider.price);
+  const ingredients = useSelector(state => state.builder.ingredients);
+  const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
     history.replace('/');
@@ -16,7 +16,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('https://builder-be2e1-default-rtdb.firebaseio.com/orders.json', {
+    axios.post('orders.json', {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),

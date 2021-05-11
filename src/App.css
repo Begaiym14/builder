@@ -14,8 +14,8 @@ body{
 .medicine{
 margin: 1rem;
 text-align: center;
-color:  #30d5c8;
+color:  black;
 font-size: 60px;
-color: rgb(255, 0, 0);
-text-shadow: 2px 2px 5px rgb(255, 238, 0);
+/* color: rgb(255, 0, 0);
+text-shadow: 2px 2px 5px rgb(255, 238, 0); */
 }
