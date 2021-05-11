@@ -11,12 +11,12 @@ const BellControl = ({ type, count }) => {
 
   return (
     <div className={classes.BellControl}>
-      <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", animal: type })}>+</Button>
-      <div className={classes.ingredient}>
-        {names[type]}
-      </div>
-      <Button onClick={() => dispatch({ type: "REMOVE_INGREDIENT", animal: type })} disabled={!count}>-</Button>
+    <Button onClick={() => dispatch(add(type))}>+</Button>
+    <div className={classes.ingredient}>
+      <BellIngredient type={type} fixed />
     </div>
+    <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
+  </div>
   );
 }
 

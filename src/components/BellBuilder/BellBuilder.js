@@ -10,8 +10,8 @@ import Button from "../UI/Button/Button";
 import { useSelector } from "react-redux";
 
 const BellBuilder = ({ history }) => {
-  const ingredients = useSelector(state => state.ingredients);
-  const price = useSelector(state => state.price);
+  const ingredients = useSelector(state => state.builder.ingredients);
+  const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
   // useEffect(loadDefaults, []);

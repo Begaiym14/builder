@@ -10,7 +10,7 @@ const prices = {
     dumai: "dumai",
     kay: "kay",
 };
-const builderReducer = (state = initialState, action) => {
+const builder = (state = initialState, action) => {
     const newState = { ...state }
     switch (action.type) {
         case "ADD_INGREDIENT":
@@ -26,4 +26,4 @@ const builderReducer = (state = initialState, action) => {
     }
     return newState;
 }
-export default builderReducer;
+export default builder;

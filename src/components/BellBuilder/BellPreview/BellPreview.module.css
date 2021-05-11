@@ -19,8 +19,13 @@
   justify-content: center;
   align-items: center;
 }
-
-
+.lenta {
+  border-radius: 100px;
+  /* width: 100px;
+  height: 100px; */
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
 .price {
   background-color: rgba(92, 91, 91, 0.534);
   border-radius: 1rem;
