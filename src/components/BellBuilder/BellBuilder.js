@@ -2,7 +2,7 @@ import BellPreview from "./BellPreview/BellPreview";
 import BellControls from "./BellControls/BellControls";
 import classes from "./BellBuilder.module.css";
 import { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";

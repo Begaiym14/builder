@@ -2,12 +2,13 @@ import classes from "./OrderSummary.module.css";
 
 const OrderSummary = ({ medicines, price }) => {
   const labels = {
-    blue: "Blue",
-    red: "Red",
-    pink: "Pink",
-    purple: "Purple",
-    white: "White",
-    yellow: "Yellow",
+    aprovel: "Aprovel",
+    festalN: "FestalN",
+    lazolvan: "Lazolvan",
+    lozap: "Lozap",
+    magneB: "MagneB",
+    noshpa: "Noshpa",
+    telzapplus: "Telzapplus",
   }
   const results = Object.keys(medicines)
     .map(type => <li>{labels[type]}: {medicines[type]}</li>);
