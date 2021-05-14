@@ -1,5 +1,5 @@
-export const ADD_INGREDIENT = "ADD_INGREDIENT";
-export const REMOVE_INGREDIENT = "REMOVE_INGREDIENT";
-export const SET_INGREDIENTS = "SET_INGREDIENTS";
+export const ADD_DRINKS = "ADD_DRINKS";
+export const REMOVE_DRINKS = "REMOVE_DRINKS";
+export const SET_DRINKS = "SET_DRINKS";
 
 export const SET_ORDERS = "SET_ORDERS";

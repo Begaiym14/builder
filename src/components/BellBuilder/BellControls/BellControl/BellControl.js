@@ -10,7 +10,7 @@ const BellControl = ({ type, count }) => {
   return (
     <div className={classes.BellControl}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
-      <div className={classes.medicine}>
+      <div className={classes.drink}>
         <BellIngredient type={type} fixed />
       </div>
       <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>

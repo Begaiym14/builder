@@ -1,13 +1,12 @@
 import BellIngredient from "../BellIngredient/BellIngredient";
-// import lenta from "../../../images/dumai.png";
 
 import classes from "./BellPreview.module.css";
 
-const BellPreview = ({ medicines, price }) => {
+const BellPreview = ({ drinks, price }) => {
   const result = [];
-  for (const medicine in medicines) {
-    for (let i = 0; i < medicines[medicine]; i++) {
-      result.push(<BellIngredient key={medicine + i} type={medicine} />)
+  for (const drink in drinks) {
+    for (let i = 0; i < drinks[drink]; i++) {
+      result.push(<BellIngredient key={drink + i} type={drink} />)
     }
   }
 
@@ -15,7 +14,7 @@ const BellPreview = ({ medicines, price }) => {
     <div className={classes.BellPreview}>
       <div
         className={classes.bell}>
-        <div className={classes.lenta}>
+        <div className={classes.drink}>
           {/* <img src={lenta} alt="#" /> */}
           {result}
         </div>

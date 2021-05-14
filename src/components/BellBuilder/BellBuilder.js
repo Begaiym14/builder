@@ -11,7 +11,7 @@ import { load } from "../../store/actions/biulder";
 
 const BellBuilder = ({ history }) => {
   const dispatch = useDispatch();
-  const medicines = useSelector(state => state.builder.medicines);
+  const drinks = useSelector(state => state.builder.drinks);
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
@@ -34,17 +34,17 @@ const BellBuilder = ({ history }) => {
   return (
     <div className={classes.BellBuilder}>
       <BellPreview
-        medicines={medicines}
+        drinks={drinks}
         price={price} />
       <BellControls
-        medicines={medicines}
+        drinks={drinks}
         startOrdering={startOrdering}
         />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
           <OrderSummary
-            medicines={medicines}
+            drinks={drinks}
             price={price}
             />
           <Button onClick={finishOrdering} green>Checkout</Button>
