@@ -1,43 +1,41 @@
-import { ADD_DRINKS, REMOVE_DRINKS } from "../actions/types";
+import { ADD_DRINKS, REMOVE_DRINKS, SET_DRINKS } from "../actions/types";
 
 const initialState = {
-    drinks: {
-        cola: "cola",
-        fanta: "fanta",
-        flesh: "flesh",
-        nitro: "nitro",
-        pepsi: "pepsi",
-        sprite: "sprite",
-    },
+  drinks: {
+  },
 
-    price: 200,
+  price: 0,
 };
 const prices = {
-        cola: "cola",
-        fanta: "fanta",
-        flesh: "flesh",
-        nitro: "nitro",
-        pepsi: "pepsi",
-        sprite: "sprite",
+  cola: 14,
+  fanta: 14,
+  flesh: 14,
+  nitro: 15,
+  pepsi: 15,
+  sprite: 11,
 };
 const builder = (state = initialState, action) => {
-    const newState = { ...state };
-  
-    switch (action.type) {
-      case ADD_DRINKS:
-        newState.drinks[action.drink]++;
-        newState.price += prices[action.drink];
-        break;
-      case REMOVE_DRINKS:
-        newState.drinks[action.drink]--;
-        newState.price -= prices[action.drink];
-        break;
-    
-      default:
-        break;
-    }
-  
-    return newState;
+  const newState = { ...state };
+
+  switch (action.type) {
+    case ADD_DRINKS:
+      newState.drinks[action.drink]++;
+      newState.price += prices[action.drink];
+      break;
+    case REMOVE_DRINKS:
+      newState.drinks[action.drink]--;
+      newState.price -= prices[action.drink];
+      break;
+    case SET_DRINKS:
+      newState.drinks = action.data.drinks;
+      newState.price = action.data.price;
+      break;
+
+    default:
+      break;
   }
-  
-  export default builder;
+
+  return newState;
+}
+
+export default builder;

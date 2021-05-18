@@ -39,17 +39,17 @@ const BellBuilder = ({ history }) => {
       <BellControls
         drinks={drinks}
         startOrdering={startOrdering}
-        />
+      />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
-          <OrderSummary
-            drinks={drinks}
-            price={price}
-            />
-          <Button onClick={finishOrdering} green>Checkout</Button>
-          <Button onClick={stopOrdering}>Cancel</Button>
-        </Modal>
+        <OrderSummary
+          drinks={drinks}
+          price={price}
+        />
+        <Button onClick={finishOrdering} green="green">Checkout</Button>
+        <Button onClick={stopOrdering}>Cancel</Button>
+      </Modal>
     </div>
   );
 }

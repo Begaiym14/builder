@@ -10,7 +10,7 @@ const OrderSummary = ({ drinks, price }) => {
     sprite: "Sprite",
   }
   const results = Object.keys(drinks)
-    .map(type => <li>{labels[type]}: {drinks[type]}</li>);
+    .map(type => <li key={type}>{labels[type]}: {drinks[type]}</li>);
 
   return (
     <div className={classes.OrderSummary}>

@@ -10,7 +10,7 @@ import sprite from "../../../images/sprite.png";
 
 const BellIngredient = ({ type,fixed }) => {
   const types = {
-    cola: { backgroundImage: `url(${cola})`, width: "180px", height: "180px" },
+    cola: { backgroundImage: `url(${cola})`, width: "70px", height: "70px" },
     fanta: { backgroundImage: `url(${fanta})`, width: "70px", height: "70px" },
     flesh: { backgroundImage: `url(${flesh})`, width: "70px", height: "70px" },
     nitro: { backgroundImage: `url(${nitro})`, width: "70px", height: "70px" },

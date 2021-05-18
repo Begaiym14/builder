@@ -9,7 +9,6 @@ const BellPreview = ({ drinks, price }) => {
       result.push(<BellIngredient key={drink + i} type={drink} />)
     }
   }
-
   return (
     <div className={classes.BellPreview}>
       <div className={classes.bell}>

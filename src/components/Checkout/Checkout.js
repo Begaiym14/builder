@@ -1,7 +1,7 @@
 import BellPreview from "../BellBuilder/BellPreview/BellPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
-import axios from "axios";
+import axios from "../../axios";
 import { useSelector } from "react-redux";
 
 
@@ -16,7 +16,7 @@ const Checkout = ({ history }) => {
   function submitCallback(event) {
     const data = new FormData(event.target);
 
-    axios.post('orders.json', {
+    axios.post('/orders.json', {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
@@ -38,5 +38,5 @@ const Checkout = ({ history }) => {
     </div>
   );
 }
- 
+
 export default Checkout;
