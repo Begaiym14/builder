@@ -2,6 +2,7 @@ import classes from "./Order.module.css";
 
 const Order = ({ name, phone, address, drinks, price }) => {
   const outputDrinks = Object.keys(drinks)
+    // const outputDrinks = Object.keys(drinks)
     .map(drink => <em key={drink}>{drink} - {drinks[drink]}</em>);
 
   return (
