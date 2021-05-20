@@ -1,5 +1,7 @@
   
-import { SET_ORDERS } from "../actions/types";
+import { 
+  SET_ORDERS 
+} from "../actions/types";
 
 const initialState = [];
 
