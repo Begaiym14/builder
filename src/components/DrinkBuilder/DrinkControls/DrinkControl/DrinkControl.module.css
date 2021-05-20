@@ -1,0 +1,10 @@
+.BellControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+  }
+  .BellControl .drink div {
+    position: static;
+    margin: 0 .5rem;
+  }
