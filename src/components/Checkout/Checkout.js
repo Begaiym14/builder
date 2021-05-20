@@ -1,8 +1,9 @@
-import BellPreview from "../BellBuilder/BellPreview/BellPreview";
+import DrinkPreview from "../DrinkBuilder/DrinkPreview/DrinkPreview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
 import { useSelector } from "react-redux";
+import withAxios from "../withAxios";
 
 
 const Checkout = ({ history }) => {
@@ -31,7 +32,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div className={classes.Checkout}>
-      <BellPreview drinks={drinks} price={price} />
+      <DrinkPreview drinks={drinks} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />
@@ -39,4 +40,4 @@ const Checkout = ({ history }) => {
   );
 }
 
-export default Checkout;
+export default withAxios(Checkout, axios);
