@@ -10,9 +10,9 @@ const prices = {
   cola: 14,
   fanta: 14,
   flesh: 14,
-  nitro: 15,
-  pepsi: 15,
-  sprite: 11,
+  nitro: 14,
+  pepsi: 14,
+  sprite: 14,
 };
 const builder = (state = initialState, action) => {
   const newState = { ...state };
