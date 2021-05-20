@@ -1,8 +1,8 @@
 import Drink from "../Drink/Drink"
-import classes from "./BellPreview.module.css";
+import classes from "./DrinkPreview.module.css";
 
 
-const BellPreview = ({ drinks, price }) => {
+const DrinkPreview = ({ drinks, price }) => {
   const result = [];
   for (const drink in drinks) {
     for (let i = 0; i < drinks[drink]; i++) {
@@ -10,15 +10,15 @@ const BellPreview = ({ drinks, price }) => {
     }
   }
   return (
-    <div className={classes.BellPreview}>
-      <div className={classes.bell}>
+    <div className={classes.DrnikPreview}>
+      <div className={classes.drink}>
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>
   );
 }
 
-export default BellPreview;
+export default DrinkPreview;
 
 
 
