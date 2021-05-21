@@ -15,8 +15,8 @@ const Drink = ({ type }) => {
     fanta: { backgroundImage: `url(${fantaBackground})`, width: "55px", height: "55px" },
     flesh: { backgroundImage: `url(${fleshBackground})`, width: "55px", height: "60px" },
     nitro: { backgroundImage: `url(${nitroBackground})`, width: "38px", height: "59px" },
-    pepsi: { backgroundImage: `url(${pepsiBackground})`, width: "50px", height: "69px" },
-    sprite: { backgroundImage: `url(${spriteBackground})`, width: "45px", height: "58px" },
+    pepsi: { backgroundImage: `url(${pepsiBackground})`, width: "52px", height: "65px" },
+    sprite: { backgroundImage: `url(${spriteBackground})`, width: "50px", height: "58px" },
   };
  
   return ( 
