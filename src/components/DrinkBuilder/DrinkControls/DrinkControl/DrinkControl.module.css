@@ -1,10 +1,16 @@
-.BellControl {
+.DrinkControl {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: .5rem 0;
   }
-  .BellControl .drink div {
+  .DrinkControl .drink div {
     position: static;
     margin: 0 .5rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .DrinkControl button {
+    background-color: #6F6E6B;
+    margin: 10px;
   }

@@ -10,7 +10,7 @@ const DrinkPreview = ({ drinks, price }) => {
     }
   }
   return (
-    <div className={classes.DrnikPreview}>
+    <div className={classes.DrinkPreview}>
       <div className={classes.drink}>
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>

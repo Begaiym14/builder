@@ -1,10 +1,9 @@
 import { useDispatch } from "react-redux";
 import { add, remove } from "../../../../store/actions/biulder";
 import Button from "../../../UI/Button/Button";
-import Drink from "../../Drink/Drink";
-import classes from "./BellControl.module.css";
+import classes from "./DrinkControl.module.css";
 
-const BellControl = ({ type, count }) => {
+const DrinkControl = ({ type, count }) => {
   const dispatch = useDispatch();
 
   const names = {
@@ -16,7 +15,7 @@ const BellControl = ({ type, count }) => {
     sprite: "sprite"
   }
   return (
-    <div className={classes.BellControl}>
+    <div className={classes.DrinkControl}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
       <div className={classes.drink}>
         {names[type]}
@@ -27,4 +26,4 @@ const BellControl = ({ type, count }) => {
   );
 }
 
-export default BellControl;
+export default DrinkControl;

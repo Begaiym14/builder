@@ -1,30 +1,33 @@
 import Button from "../../UI/Button/Button";
-import BellControl from "./BellControl/BellControl";
-import classes from "./BellControls.module.css";
+import DrinkControl from "./DrinkControl/DrinkControl";
+import classes from "./DrinkControls.module.css";
 
-const BellControls = ({
+const DrinkControls = ({
   drinks,
   startOrdering
 }) => {
   const results = [];
   let total = 0;
   for (const drink in drinks) {
-    // Add ingredient number to totals number
     total += drinks[drink];
-    // Render pizza control for this ingredient
-    results.push(<BellControl
-      key={drink}
-      count={drinks[drink]}
-      type={drink} />)
+
+    results.push(
+      <DrinkControl
+        key={drink}
+        count={drinks[drink]}
+        type={drink} />)
   }
 
   return (
-    <div className={classes.BellControls}>
-      <strong>drink</strong>
+    <div className={classes.DrinkControls}>
+      <strong>Drink</strong>
       {results}
-      <Button disabled={!total} onClick={startOrdering}>Order</Button>
+      <Button disabled={!total}
+        onClick={startOrdering}>
+        Order
+        </Button>
     </div>
   );
 }
 
-export default BellControls;
+export default DrinkControls;
