@@ -1,6 +1,6 @@
-  
-import { 
-  SET_ORDERS 
+
+import {
+  SET_ORDERS
 } from "../actions/types";
 
 const initialState = [];
@@ -8,13 +8,16 @@ const initialState = [];
 const orders = (state = initialState, action) => {
   switch (action.type) {
     case SET_ORDERS:
-      return Object.keys(action.data).map(id => {
-        return {
-          ...action.data[id],
-          id: id,
-        };
-      });;
-  
+      if (action.orders) {
+        return Object.keys(action.data).map(id => {
+          return {
+            ...action.data[id],
+            id: id,
+          };
+        });;
+      }
+      break;
+
     default:
       break;
   }

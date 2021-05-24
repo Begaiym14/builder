@@ -10,6 +10,7 @@ export const set = (data) => ({
 
 export const load = () => {
   return (dispatch) => axios
-    .get('/orders.json')
-    .then(response => dispatch(set(response.data)));
+    .get
+    ("/orders.json")
+    .then((response) => dispatch(set(response.data)));
 }
