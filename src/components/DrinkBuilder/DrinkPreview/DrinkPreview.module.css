@@ -38,20 +38,20 @@ a:focus {
   .drink{
     width: 280px;
     min-height: 280px;
-    background-color: white;
+    background-color: rgba(92, 91, 91, 0.534);
     margin-bottom: 1rem;
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px rgba(92, 91, 91, 0.534);
     border-radius: 2rem  ;
     padding: 20px;
    
   }
   .price {
     /* box-shadow: 0 0 10px blue; */
-   background-color: white;
+   background-color: rgba(92, 91, 91, 0.534);
     border-radius: 2.5rem;
     padding: 0 2rem;
     cursor: pointer;
-    color: blue;
+    color: black;
     /* text-shadow: 0 0 5px rgb(0, 217, 255); */
     font-size: 1.5rem;
     font-weight: bold;
