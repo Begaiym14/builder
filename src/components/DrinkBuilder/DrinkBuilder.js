@@ -13,16 +13,23 @@ import { load } from '../../store/actions/biulder';
 
 const DrinkBuilder = ({ history }) => {
   const dispatch = useDispatch();
+  const isAuthenticated = useSelector(state => state.auth.token !== null)
   const drinks = useSelector(state => state.builder.drinks);
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
-  
+
   useEffect(() => dispatch(load()), [dispatch]);
 
   function startOrdering() {
-    setOrdering(true);
+    if (isAuthenticated) {
+      setOrdering(true);
+    }
+    else {
+      history.push("/auth");
+    }
   }
 
+  
   function stopOrdering() {
     setOrdering(false);
   }
@@ -40,20 +47,20 @@ const DrinkBuilder = ({ history }) => {
       <DrinkControls
         drinks={drinks}
         startOrdering={startOrdering}
-        />
+      />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
-          <OrderSummary
-            drinks={drinks}
-            price={price}
-            />
-          <Button onClick={finishOrdering} green="green">Checkout</Button>
-          <Button onClick={stopOrdering}>Cancel</Button>
-        </Modal>
+        <OrderSummary
+          drinks={drinks}
+          price={price}
+        />
+        <Button onClick={finishOrdering} green="green">Checkout</Button>
+        <Button onClick={stopOrdering}>Cancel</Button>
+      </Modal>
     </div>
   );
 }
-  
+
 
 export default withAxios(DrinkBuilder, axios);
