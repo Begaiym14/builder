@@ -5,6 +5,7 @@
   justify-content: center;
   margin: 0 20px;
 }
+
 .name{
   display: flex;
   flex-wrap: wrap;
@@ -14,10 +15,10 @@
   width: 460px;
   min-height: 400px;
   background-color:rgba(92, 91, 91, 0.534);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   box-shadow: 0 0 10px rgba(92, 91, 91, 0.534);
   border-radius: 2rem  ;
-  padding: 20px;
+  padding: 25px;
 }
 
 .price {
